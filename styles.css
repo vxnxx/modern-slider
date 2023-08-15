@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    height: 10vh;
+    background-color:#161616;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    font-size: larger;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px 5px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 10px #e100ff;
+    border-bottom: #fff solid 1px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    height: 90vh;
+
+}
+.h1-header {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+}
+
+.dot {
+    height: 7rem;
+    width: 7rem;
+    background-color: #e100ff;
+    border-radius: 50%;
+    position: relative;
+    top : -7%;
+    left: 17%;
+    animation: dot 2s infinite;
+    filter:blur(75px);
+}
+
+@keyframes dot {
+    0% {
+        transform: scale(1.5) rotate(45deg);
+    }
+    50% {
+        transform: scale(2) rotate(45deg);
+    }
+    100% {
+        transform: scale(1.5) rotate(45deg);
+    }
+}
+
+.arrow {
+  border: solid #e100ff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  animation: dot 1s infinite;
+  padding: 3px;
+  transform: rotate(45deg) scale(1.5);
+
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
